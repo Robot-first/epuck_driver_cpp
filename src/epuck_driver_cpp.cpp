@@ -961,7 +961,7 @@ int main(int argc,char *argv[]) {
     * You must call one of the versions of ros::init() before using any other
     * part of the ROS system.
     */
-    ros::init(argc, argv, "epuck_driver_cpp");
+    //ros::init(argc, argv, "epuck_driver_cpp");
 
     /**
     * NodeHandle is the main access point to communications with the ROS system.
@@ -970,6 +970,7 @@ int main(int argc,char *argv[]) {
     */
     ros::NodeHandle np("~"); // Private.
     ros::NodeHandle n; // Public.
+    ros::init(argc, argv, "epuck_driver_cpp");
     
     np.param<std::string>("epuck_name", epuckname, "epuck");
     np.param("xpos", init_xpos, 0.0);
