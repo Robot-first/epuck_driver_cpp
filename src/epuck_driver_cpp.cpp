@@ -1,4 +1,3 @@
-
 #include <sstream>
 #include <math.h>
 #include <time.h>
@@ -23,7 +22,7 @@ extern "C" {
 	#include <sys/stat.h>
 	#include <fcntl.h>
 	#include <linux/i2c-dev.h> /* for I2C_SLAVE */
-	#include <linux/i2c.h>
+	//#include <linux/i2c.h>
 	#include <sys/ioctl.h>
 	#include <stdlib.h>
 	#include <unistd.h>
